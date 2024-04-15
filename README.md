@@ -17,6 +17,7 @@ The following algorithms are implemented:
 - [ ] Random
 - [ ] IP Hash
 - [ ] URL Hash
+- [ ] Peak EWMA
 
 ## [How to Use](#how-to-use)
 
@@ -32,5 +33,5 @@ In order to change the algorithm and some other factores, you should look at the
 
 ## [Credits](#credits)
 
-I was inspired by the blog written by [Sam Who](https://samwho.dev/load-balancing/) and the subsequent YouTube video made by [Theo]().
+I was inspired by the blog written by [Sam Who](https://samwho.dev/load-balancing/) and the subsequent YouTube video made by [Theo](https://www.youtube.com/watch?v=jdRTpslyvP4&pp=ygUTdGhlbyBsb2FkIGJhbGFuY2luZw%3D%3D).
 
