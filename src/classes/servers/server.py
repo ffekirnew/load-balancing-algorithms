@@ -4,7 +4,9 @@ from classes.requests.request import Request
 
 
 class Server(metaclass=ABCMeta):
-    def __init__(self, name: str, request_processing_time: int) -> None:
+    power_levels = [1, 2, 3, 4, 5]
+
+    def __init__(self, name: str, power: int) -> None:
         """
         :param name: Name of the server
         :param request_processing_time: Time taken (in milliseconds) by the server to process a request
@@ -12,10 +14,11 @@ class Server(metaclass=ABCMeta):
         This class represents a simple server with a name and a request processing time
         """
         self.name = name
-        self.request_processing_time = request_processing_time
+        self.power = power
+        self.is_busy = False
 
     def __str__(self) -> str:
-        return f"{self.name} - {self.request_processing_time}ms"
+        return f"{self.name} - {self.power} Level Server"
 
     @abstractmethod
     def process_request(self, request: Request) -> None:
