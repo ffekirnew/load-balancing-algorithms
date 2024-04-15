@@ -13,7 +13,7 @@ class LoadBalancer(metaclass=ABCMeta):
         This class represents a base load balancer with a name
         """
         self.name: str = name
-        self.servers: List[Server] = []
+        self.servers: List[Server] = servers
 
     def add_server(self, server: Server) -> None:
         """
